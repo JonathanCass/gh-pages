@@ -65,8 +65,16 @@ console.log(isContained)
 
 
 
-
 // ---------------------------
 // 6. Use the Instructors array and find all that teach JavaScript, 
 //    then sort them alphabetically
 // ---------------------------
+var teachesJS = instructors.filter(function(value){
+	return value.teaches.indexOf("JavaScript") + 1
+})
+var namesOnly =""
+
+for (i = 0 ; i < teachesJS.length ; i++ ){
+	namesOnly += teachesJS[i].firstname
+}
+console.log(namesOnly)
