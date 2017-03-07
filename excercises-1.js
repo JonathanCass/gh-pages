@@ -24,22 +24,25 @@
 // Write a function called `sum` that takes two
 // parameters and returns the sum of those 2 numbers.
 
-
-
+function sum(x, y){
+	return x + y
+}
 
 // Q2
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 
-
-
+function avg(x, y, z){
+	return (x + y + z)/3
+}
 
 // Q3
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 
-
-
+function getLength(inputString){
+	return inputString.length 
+}
 
 // Q4
 // Write a function called `greaterThan` that takes
@@ -47,8 +50,9 @@
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
 
-
-
+function greaterThan(x, y){
+	return(x < y)
+}
 
 // Q5
 // Write a function called `greet` that takes a
@@ -56,8 +60,9 @@
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 
-
-
+function greet(x){
+	return "Hello, "+x+"!"
+}
 
 // Q6
 // Write a function called `madlib` that takes
@@ -70,8 +75,9 @@
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 
-
-
+function madlib(a, b, c, d){
+	return "The " +a+ " jumped over the " +b+ " which ate the " +c+ " whilst the " +d+ " watched."
+}
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
