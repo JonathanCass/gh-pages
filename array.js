@@ -41,20 +41,24 @@ console.log(longestString)
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-
-
-
+var evenNumbers = numbers.filter(function(value){
+	return value % 2 == 0
+})
+console.log(evenNumbers)
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
-
-
+var oddNumbers = numbers.filter(function(value){
+	return value % 2 == 1
+})
+console.log(oddNumbers)
 // ---------------------------
 // 5. Find words that contain `is`
 // ---------------------------
-
-
-
+var isContained = strings.filter(function(value){
+	return value.indexOf("is") + 1
+})
+console.log(isContained)
 // ---------------------------
 // 5. Join Both Arrays Together
 // ---------------------------
