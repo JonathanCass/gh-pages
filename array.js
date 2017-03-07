@@ -25,19 +25,19 @@ numbers.forEach(function(value){
 	if(value > largestNumber){
 		largestNumber = value
 	}
-	else{
-		largestNumber = largestNumber
-	}
 })
 console.log(largestNumber)
-
 // ---------------------------
 // 2. Find longest string
 // ---------------------------
+var longestString = ""
 
-
-
-
+strings.forEach(function(value){
+	if(value.length > longestString.length){
+		longestString = value
+	}
+})
+console.log(longestString)
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
