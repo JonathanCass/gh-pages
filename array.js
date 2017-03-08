@@ -71,12 +71,10 @@ console.log(joined)
 var teachesJS = instructors.filter(function(value){
 	return value.teaches.indexOf("JavaScript") + 1
 })
-var namesOnly =""
+var namesOnly =[]
 
 for (i = 0 ; i < teachesJS.length ; i++ ){
-	namesOnly += (","+teachesJS[i].firstname.toLowerCase())
+	namesOnly.push(teachesJS[i].firstname.toLowerCase())
 }
-var namesCSV = namesOnly.split(',')
-namesCSV.shift()
-namesCSV.sort()
-console.log(namesCSV)
+namesOnly.sort()
+console.log(namesOnly)
