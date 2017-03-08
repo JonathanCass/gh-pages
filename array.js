@@ -74,8 +74,9 @@ var teachesJS = instructors.filter(function(value){
 var namesOnly =""
 
 for (i = 0 ; i < teachesJS.length ; i++ ){
-	namesOnly += (","+teachesJS[i].firstname)
+	namesOnly += (","+teachesJS[i].firstname.toLowerCase())
 }
 var namesCSV = namesOnly.split(',')
+namesCSV.shift()
 namesCSV.sort()
 console.log(namesCSV)
