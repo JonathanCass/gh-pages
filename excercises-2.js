@@ -33,7 +33,7 @@ function maxOfThree(x, y, z){
 
 function isVowel(char){
 	var x = char.toLowerCase()
-    return(x=="a"||x=="e"||x== "i"||x=="o"||x=="u")
+    return(x=="a"||x=="e"||x=="i"||x=="o"||x=="u")
 }
 
 // ---------------------

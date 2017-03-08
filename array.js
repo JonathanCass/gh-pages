@@ -62,9 +62,8 @@ console.log(isContained)
 // ---------------------------
 // 5. Join Both Arrays Together
 // ---------------------------
-
-
-
+var joined = numbers.concat(strings)
+console.log(joined)
 // ---------------------------
 // 6. Use the Instructors array and find all that teach JavaScript, 
 //    then sort them alphabetically
@@ -75,6 +74,8 @@ var teachesJS = instructors.filter(function(value){
 var namesOnly =""
 
 for (i = 0 ; i < teachesJS.length ; i++ ){
-	namesOnly += teachesJS[i].firstname
+	namesOnly += (","+teachesJS[i].firstname)
 }
-console.log(namesOnly)
+var namesCSV = namesOnly.split(',')
+namesCSV.sort()
+console.log(namesCSV)
